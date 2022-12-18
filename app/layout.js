@@ -8,6 +8,10 @@ const navItems = [
   {
     text: 'About',
     route: '/about'
+  },
+  {
+    text: 'Posts',
+    route: '/posts'
   }
 ]
 
