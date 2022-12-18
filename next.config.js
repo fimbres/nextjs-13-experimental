@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true
   },
+  images: {
+    domains: ['via.placeholder.com']
+  },
   reactStrictMode: true
 }
 
