@@ -39,3 +39,28 @@
     font-size: 23px;
     font-weight: 500;
 }
+
+.container {
+    max-width: 600px;
+}
+
+.postcard {
+    width: '100%';
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: darkgray;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.likebutton {
+    color: red;
+    background-color: transparent;
+    font-size: 50px;
+    border-color: transparent;
+    cursor: pointer;
+}
