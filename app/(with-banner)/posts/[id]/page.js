@@ -1,23 +1,23 @@
 import React from 'react'
 
-const fetchPost = (id) => {
-  return fetch('https://jsonplaceholder.typicode.com/photos/' + id, {
+const fetchpost = (id) => {
+  return fetch('https://jsonplaceholder.typicode.com/posts/' + id, {
     next: {
       revalidate: 10
     }
   }).then(res => res.json())
 }
 
-const PostPage = async ({ params }) => {
+const postpage = async ({ params }) => {
   const { id } = params
-  const postInfo = await fetchPost(id)
+  const postInfo = await fetchpost(id)
 
   return (
     <div>
       <h1>{postInfo.title}</h1>
-      <Image src={postInfo.url} alt='Post Image' />
+      <p>{postInfo.body}</p>
     </div>
   )
 }
 
-export default PostPage
+export default postpage

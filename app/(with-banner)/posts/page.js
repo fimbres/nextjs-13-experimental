@@ -1,9 +1,8 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import LikeButton from './[id]/LikeButton'
+import LikeButton from './LikeButton'
 
 const fetchPosts = () => {
-  return fetch('https://jsonplaceholder.typicode.com/photos').then(res => res.json())
+  return fetch('https://jsonplaceholder.typicode.com/posts').then(res => res.json())
 }
 
 const PostPage = async ({ params }) => {
@@ -13,7 +12,6 @@ const PostPage = async ({ params }) => {
     <section>
       {posts.slice(0, 5).map(post => (
         <article key={post.id}>
-          <Image src={post.url} alt='post image' width={200} height={200} />
           <Link href={`/posts/${post.id}`}>{post.title}</Link>
           <LikeButton id={post.id} />
         </article>

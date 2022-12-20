@@ -28,3 +28,14 @@
     font-size: 45px;
     font-weight: 600;
 }
+
+.banner {
+    width: '100%';
+    margin-top: 68px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #FFA500;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 500;
+}
