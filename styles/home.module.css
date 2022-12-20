@@ -1,0 +1,30 @@
+.navbar {
+    width: '100%';
+    background-color: #fff;
+    color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.navitem {
+    margin-right: 50px;
+}
+
+.page {
+    height: calc(100vh - 75px);
+    width: '100%';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 600;
+}
